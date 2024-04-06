@@ -2020,8 +2020,8 @@ do
 	local RobloxGuis = {"RobloxGui", "TeleportGui", "RobloxPromptGui", "RobloxLoadingGui", "PlayerList", "RobloxNetworkPauseNotification", "PurchasePrompt", "HeadsetDisconnectedDialog", "ThemeProvider", "DevConsoleMaster"}
 
 	local function FilterTable(tbl)
-		local context = context_get()
-		context_set(7)
+		--local context = context_get()
+		--context_set(7)
 		local new = {}
 		for i,v in ipairs(tbl) do --roblox iterates the array part
 			if typeof(v) ~= "Instance" then
@@ -2061,7 +2061,7 @@ do
 				end
 			end
 		end
-		context_set(context)
+		--context_set(context)
 		return new
 	end
 
